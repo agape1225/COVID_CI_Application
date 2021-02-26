@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ivline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/register_line" />
+    <TextView
+        android:id="@+id/tvpr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivline"
+        android:layout_margin="8dp"
+        android:text="현재 비밀번호 입력 : "/>
+    <EditText
+        android:id="@+id/etpr"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_alignBaseline="@+id/tvpr"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@+id/tvpr"/>
+    <Button
+        android:id ="@+id/btnck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:layout_alignBaseline="@+id/etpr"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@+id/etpr"/>
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tvnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvpr"
+        android:layout_margin="8dp"
+        android:text="새 비밀번호 입력 : "/>
+    <EditText
+        android:visibility="invisible"
+        android:id="@+id/etnew"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_alignBaseline="@+id/tvnew"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@+id/tvnew"/>
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tvnewck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvnew"
+        android:layout_margin="8dp"
+        android:text="새 비밀번호 확인 : "/>
+    <EditText
+        android:visibility="invisible"
+        android:id="@+id/etnewck"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_alignBaseline="@+id/tvnewck"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@+id/tvnewck"/>
+    <TextView
+        android:id="@+id/tvnotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvnewck"
+        android:layout_margin="8dp"/>
+</RelativeLayout>

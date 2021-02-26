@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp"
+        android:id="@+id/cardView"
+        android:layout_margin="10dp">
+
+
+        <FrameLayout
+            android:layout_height="200dp"
+            android:layout_width="match_parent">
+
+            <ProgressBar
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:id="@+id/loader"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/image"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/gradient"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/tvTitle"
+                android:textColor="@color/white"
+                android:fontFamily="@font/g_bold"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:text="TITLE"/>
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvSource"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/g_light"
+                    android:textSize="15dp"
+                    android:text="Source"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvDate"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/g_light"
+                    android:textSize="15dp"
+                    android:text="5 hour ago"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

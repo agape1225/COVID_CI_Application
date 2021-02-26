@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cookandroid.k_project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Bframe"></activity>
+        <activity android:name=".Aframe" />
+        <activity android:name=".LoadingActivity" />
+        <activity android:name=".Hospital_MyItem" />
+        <activity android:name=".Hospital_MainActivity" />
+        <activity android:name=".Hospital_Clinic" />
+        <activity android:name=".InformationManage" />
+        <activity android:name=".Verinfo" />
+        <activity android:name=".Notice" />
+        <activity android:name=".Setting" />
+        <activity android:name=".Selfdiagnosis" />
+        <activity android:name=".Article" />
+        <activity android:name=".Detailed"/>
+        <activity android:name=".Hospital" />
+        <activity android:name=".SaveLocation" />
+        <activity android:name=".Maincover">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".Chart" />
+        <activity android:name=".Header" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCsAGlkjPNH-m47ncGDxQrh_yz4JtAhxT0" />
+        <receiver android:name=".WeloAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_info" />
+        </receiver>
+    </application>
+
+</manifest>

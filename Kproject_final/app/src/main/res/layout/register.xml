@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/entirelay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/laytop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="회원가입"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivline1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/laytop"
+        android:src="@drawable/register_line" />
+
+    <RelativeLayout
+        android:id="@+id/laysection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivline1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="아이디 입력 : "
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edit_id"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvid"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/tvid" />
+            <Button
+                android:id ="@+id/btnoverck"
+                android:text="중복확인"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignBaseline="@+id/edit_id"
+                android:background="#FFB573"
+                android:textColor="#FFFFFF"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/edit_id"
+                />
+            <TextView
+                android:id="@+id/tvpw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvid"
+                android:layout_margin="8dp"
+                android:text="비밀번호 입력 : "
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edit_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_alignBaseline="@+id/tvpw"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/tvpw" />
+
+            <TextView
+                android:id="@+id/tvpwok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvpw"
+                android:layout_margin="8dp"
+                android:text="비밀번호 확인 : "
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edit_pwok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_alignBaseline="@+id/tvpwok"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/tvpwok" />
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvpwok"
+                android:layout_margin="8dp"
+                android:text="이름 : "
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvname"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/tvname" />
+
+            <TextView
+                android:id="@+id/tvnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvname"
+                android:layout_margin="8dp"
+                android:text="전화번호 : "
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edit_number1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvnumber"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/tvnumber"
+                android:inputType="numberDecimal"
+                android:maxLength="3"/>
+            <TextView
+                android:id="@+id/dash1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/edit_number1"
+                android:text="-"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/edit_number1"/>
+            <EditText
+                android:id="@+id/edit_number2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/dash1"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/dash1"
+                android:inputType="numberDecimal"
+                android:maxLength="4"/>
+            <TextView
+                android:id="@+id/dash2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/edit_number2"
+                android:text="-"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/edit_number2"/>
+            <EditText
+                android:id="@+id/edit_number3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/dash2"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/dash2"
+                android:inputType="numberDecimal"
+                android:maxLength="4"/>
+            <TextView
+                android:id="@+id/tv_re_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvnumber"
+                android:layout_margin="8dp"
+                android:text="E-Mail : "
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_re_email"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/tv_re_email"
+                android:hint="abcd@abcd.com"/>
+
+            <RelativeLayout
+                android:id="@+id/addresslayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_re_email"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvhouseaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="집주소 : "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/edit_houseaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tvhouseaddress" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvjobaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addresslayout"
+                android:layout_margin="8dp"
+                android:text="*"
+                android:textColor="#FF0000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvjobaddress2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvjobaddress"
+                android:layout_toRightOf="@id/tvjobaddress"
+                android:text="회사(학교)주소: "
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edit_jobaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tvjobaddress"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/tvjobaddress2" />
+
+            <TextView
+                android:id="@+id/tvbirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvjobaddress"
+                android:layout_margin="8dp"
+                android:text="생년월일 :"
+
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edit_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvbirth"
+                android:layout_margin="8dp"
+                android:hint="ex)20000101"
+                android:layout_toRightOf="@+id/tvbirth"
+                android:maxLength="8"/>
+
+            <TextView
+                android:id="@+id/tvsentence1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvbirth"
+                android:layout_margin="8dp"
+                android:text="*생략가능"
+                android:textColor="#FF0000"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivline2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/laysection"
+        android:src="@drawable/register_line" />
+
+    <RelativeLayout
+        android:id="@+id/laybottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/ivline2">
+
+        <Button
+            android:id="@+id/finishbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#FF5E00"
+            android:text="가입완료" />
+
+        <CheckBox
+            android:id="@+id/checkagree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/finishbtn"
+            android:layout_centerHorizontal="true"
+            android:text="동의" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/checkagree"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tvagree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="개인정보 활용 동의서" />
+
+            <Button
+                android:id="@+id/btnagreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvagree"
+                android:layout_toRightOf="@id/tvagree"
+                android:background="#00000000"
+                android:text="전문보기" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

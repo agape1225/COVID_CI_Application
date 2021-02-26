@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">K-project</string>
+    <string name="group1">앱 소개</string>
+    <string name="group2">증상을 확인해보세요!</string>
+    <string name="group3">예방수칙을 기억하세요!</string>
+
+    <string-array name="group1">
+        <item>
+            요즘 Covid-19로 인해 위험한 나날을 보내고 있습니다. 누구나 자신도 모르게 걸리는 병으로 최대한 조심해야 하지만 만약에 Covid-19에 걸리게 된다면 나 자신 말고도 주위 사람들도 위험에 처하게 됩니다. 그러기에 나라에서는 역학조사를 시행하고 있습니다. 하지만 이 과정에서 거짓말을 하는 사람도 있고 기억을 잊어버리는 사람 등 역학조사에 많은 행정력이 필요하고 골든타임 확보가 힘듭니다. 이러한 것을 조금이나마 줄이기 위해 각자의 핸드폰에 Welo를 이용하면서 자신의 동선은 핸드폰이 알아서 기록하기에 역학조사가 좀 더 원활히 될 수 있고 자신이 코로나 환자와 접촉한 적이 있다면 빠르게 검사를 받을 수 있게 즉, 코로나 선제 방역을 좀 더 확실히 빠르게 할 수 있을 것으로 기대됩니다!
+        </item>
+    </string-array>
+    <string-array name="group2">
+        <item>
+            증상 : 발열, 권태감, 기침, 호흡곤란 및 폐렴 등 경증에서 중증까지 다양한 호흡기감염증이 나타남. 그 외 가래, 인후통, 두통, 객혈과 오심, 설사 등도 나타남.
+        </item>
+    </string-array>
+    <string-array name="group3">
+        <item>
+            흐르는 물에 비누로 꼼꼼하게 손씻기
+            기침이나 재채기할 때 옷소매로 입과 코 가리기
+            씻지 않은 손으로 눈·코·입 만지지 않기
+            발열, 호흡기 증상자와의 접촉 피하기
+            의료기관 방문 시 마스크 착용하기
+            사람 많은 곳 방문 자제하기
+        </item>
+    </string-array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+</resources>

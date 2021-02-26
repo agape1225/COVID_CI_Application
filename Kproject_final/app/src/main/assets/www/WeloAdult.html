@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>자가진단(성인용)</title>
+    <style>
+     body {  
+        margin-left : 40px; margin-right : 40px;}
+      h1 { color : #FF8000;}
+      button{float:center;width: 250px;}
+      tr{height: 30px; background:#F8ECE0; }
+      tr:nth-child(even){background:#F7BE81;}
+      button{width: 300px;}
+      table{margin-right: auto;margin-left: auto;}
+    </style>
+  </head>
+  <script type="text/javascript">
+    var Symptom=0;
+  </script>
+  <body>
+    <header>
+       <h1>코로나19 자가진단(성인용)</h1>
+    </header>
+    <hr>
+    <section>
+      <form>
+        <p><strong>최근 14일 이내에 아래의 증상을 경험한 적 있습니까?<br>
+              (단, 기저질환 등으로 코로나19와 관계없이 평소에 다음 증상이 계속되는 경우는 제외)</strong></p>
+        <table border="0">
+          <tbody>
+            <tr><td colspan="3">발열37.5도 이상</td><td><input id= "corona" type="checkbox" name="corona" value="fever"></td></tr>
+            <tr><td colspan="3">기침</td><td><input id= "corona" type="checkbox" name="corona" value="cough"></td></tr>
+            <tr><td colspan="3">가래</td><td><input id= "corona" type="checkbox" name="corona" value="Phlegm"></td></tr>
+            <tr><td colspan="3">오한</td><td><input id= "corona" type="checkbox" name="corona" value="chills"></td></tr>
+            <tr><td colspan="3">목쓰림/아픔</td><td><input id= "corona" type="checkbox" name="corona" value="Sore_throat"></td></tr>
+            <tr><td colspan="3">호흡곤란</td><td><input id= "corona" type="checkbox" name="corona" value="Difficulty_breathing"></td></tr>
+            <tr><td colspan="4"><button onclick="value_check()">진단 결과 보기</button></td></tr>
+          </tbody></table><hr>
+       </form>
+    </section>
+    <script>
+    function value_check() {
+        var check_count = document.getElementsByName("corona").length;
+        for (var i=0; i<check_count; i++) {
+            if (document.getElementsByName("corona")[i].checked == true) {
+              Symptom +=1;
+            }
+        }
+        if(Symptom == 0){
+          alert("코로나19 의심증상이 없습니다.");
+          
+        }
+        else {
+          alert("코로나19 의심증상이 있습니다. 가까운 진료소를 방문하세요.");
+        }
+      }
+    </script>
+  <footer>
+       <p><small><strong>'Welo'에서 지원하는 성인 자가진단 사이트입니다.</strong></small></p>
+    </footer>
+  </body>
+</html>
