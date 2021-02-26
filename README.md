@@ -19,3 +19,5 @@
   2. 가변배열을 활용한 동선 비교
   3. GPSTracker를 활용한 위치 정보 할당
   4. MPAndroidChart를 활용한 실시간 확진자 그래프 생성
+
+상세설명: https://apape1225.tistory.com/58
