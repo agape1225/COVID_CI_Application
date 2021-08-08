@@ -21,3 +21,5 @@
   4. MPAndroidChart를 활용한 실시간 확진자 그래프 생성
 
 상세설명: https://apape1225.tistory.com/58
+
+![img1](./for_readme/슬라이드1.JPG)
